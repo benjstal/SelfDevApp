@@ -5,10 +5,18 @@ public class Task {
     int xpboost;
     char category;
     String description;
+    char difficulty;
 
-    public Task("tit", ) {
-        this.title = tit
+    public Task() {
+
     }
 
-
+    public Task(String tit, int xp, char cat, String des, char dif) {
+        this.title = tit;
+        this.xpboost = xp;
+        this.category = cat;
+        this.description = des;
+        this.difficulty = dif;
+    }
 }
+

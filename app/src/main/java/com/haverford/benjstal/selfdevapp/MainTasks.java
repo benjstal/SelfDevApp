@@ -9,11 +9,22 @@ import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import java.util.HashMap;
 
 public class MainTasks extends AppCompatActivity {
 
+    public HashMap<String,Task> ctasks = new HashMap<>();
+
+    public HashMap<String,Task> btasks = new HashMap<>();
+
+    public HashMap<String,Task> stasks = new HashMap<>();
+
+    public HashMap<String,Task> dtasks = new HashMap<>();
+
+    Task talktostrange = new Task("Compliment Shoes", 30, 'C' ,"When in public, walk to a stranger and compliment them on their shoes. Be genuine. Find one detail to point out why you like them.", 'E');
+
     ImageButton profilebutton;
-    String[] dates = {"May 21", "May22", "May 23"};
+    String[] dates = {"May 21", "May22", talktostrange.description};
     ArrayAdapter testAdapter;
 
     @Override

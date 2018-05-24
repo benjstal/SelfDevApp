@@ -6,10 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
+
 import java.util.HashMap;
+
 
 public class MainTasks extends AppCompatActivity {
 
@@ -41,9 +41,6 @@ public class MainTasks extends AppCompatActivity {
             }
         });
 
-        ListAdapter testAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates);
-        ListView testListView = (ListView) findViewById(R.id.testListView);
-        testListView.setAdapter(testAdapter);
 
         final TextView wordsmithTextView = (TextView) findViewById(R.id.wordsmithTextView);
 

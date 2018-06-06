@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
@@ -66,10 +67,14 @@ public class MainTasks extends AppCompatActivity {
         String[] title_type = {"Vagabond","Nomad","Charmer","Champion"};
         String Title = "Title:" + title_type[3];
         wordsmithTextView.setText(Title);
+
+
+        setContentView(R.layout.activity_main_tasks);
         LinearLayout mlayout = findViewById(R.id.mlayout);
+        LayoutInflater inflator = getLayoutInflater();
+        
 
-
-        ConstraintLayout MT_Constraint = findViewById(R.id.MT_Constraint);
+        /*ConstraintLayout MT_Constraint = findViewById(R.id.MT_Constraint);
         ConstraintSet CS1 = new ConstraintSet();
         CS1.clone(MT_Constraint);
 
@@ -103,7 +108,7 @@ public class MainTasks extends AppCompatActivity {
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
         tv.setTextColor(Color.RED);
         card.addView(tv);
-        mlayout.addView(card);
+        mlayout.addView(card);*/
 
 
     }

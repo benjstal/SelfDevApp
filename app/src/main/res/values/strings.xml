@@ -95,4 +95,5 @@
         "When in public, walk to a stranger and compliment them on their shoes. Be genuine. Find"
         " one detail to point out why you like them."
     </string>
+    <string name="title_activity_new">NewActivity</string>
 </resources>

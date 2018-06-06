@@ -40,10 +40,10 @@ public class MainTasks extends AppCompatActivity {
 
     public HashMap<String,Task> dtasks = new HashMap<>();
 
-    Task talktostrange = new Task("Compliment Shoes", 30, 'C' ,"When in public, walk to a stranger and compliment them on their shoes. Be genuine. Find one detail to point out why you like them.", 'E');
+    //Task talktostrange = new Task("Compliment Shoes", 30, 'C' ,"When in public, walk to a stranger and compliment them on their shoes. Be genuine. Find one detail to point out why you like them.", 'E');
 
     ImageButton profilebutton;
-    String[] dates = {"May 21", "May22", talktostrange.description};
+    //String[] dates = {"May 21", "May22", talktostrange.description};
     ArrayAdapter testAdapter;
 
     @Override
@@ -72,7 +72,8 @@ public class MainTasks extends AppCompatActivity {
         setContentView(R.layout.activity_main_tasks);
         LinearLayout mlayout = findViewById(R.id.mlayout);
         LayoutInflater inflator = getLayoutInflater();
-        
+        View cardview = inflator.inflate(R.layout.cardview,mlayout,false);
+        mlayout.addView(cardview);
 
         /*ConstraintLayout MT_Constraint = findViewById(R.id.MT_Constraint);
         ConstraintSet CS1 = new ConstraintSet();
